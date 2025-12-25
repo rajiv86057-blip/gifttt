@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Priya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="stage1" class="stage">
+            <h2>For someone special...</h2>
+            <div class="gift-box" onclick="nextStage(2)">🎁</div>
+            <p>Tap to open!</p>
+        </div>
+
+        <div id="stage2" class="stage hidden">
+            <h2>I don't need a gift, because...</h2>
+            <div class="card-grid">
+                <div class="card" onclick="reveal(this)">❤️ <div class="text">You</div></div>
+                <div class="card" onclick="reveal(this)">❤️ <div class="text">Are</div></div>
+                <div class="card" onclick="reveal(this)">❤️ <div class="text">My</div></div>
+                <div class="card" onclick="reveal(this)">❤️ <div class="text">Favorite</div></div>
+            </div>
+            <button id="nextBtn" class="hidden" onclick="nextStage(3)">Open Final Surprise</button>
+        </div>
+
+        <div id="stage3" class="stage hidden">
+            <h1>Merry Christmas, Priya! 🎄</h1>
+            <div class="letter">
+                <p>This Christmas, I just want you to know how special you are to me.</p>
+                <p>You are the reason behind my smiles and my happiest moments. Thank you for being you.</p>
+                <p>Love you always!</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
